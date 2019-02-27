@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const mongoDB = 'mongodb://chriztso:hikid123@ds041337.mlab.com:41337/chris';
 mongoose.connect(mongoDB);
-
+// config 
 const productSchema = new mongoose.Schema({
   uniqueID: Number,
   price: Number,
@@ -47,9 +47,9 @@ for (let i = 0; i < 100; i += 1) {
   });
 
   productToCreate.save((err) => {
-     if(err){
-       console.log(err)
-     }
+    if (err) {
+      console.log(err)
+    }
   });
 }
 
