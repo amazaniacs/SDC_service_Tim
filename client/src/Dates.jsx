@@ -1,6 +1,6 @@
 import React from 'react';
 import dates from './Dates.css';
-
+// Test
 const Dates = () => {
   const date = new Date();
   const dayNumber = date.getDate();
@@ -49,7 +49,7 @@ const Dates = () => {
           {` Get it ${actualWeekday}, ${actualMonth} ${dayNumber} - ${fourDaysLater}, ${actualMonth} ${dayNumber + 4} `}
         </span>
         {' if you choose '}
-        <span className={dates.bold}> 
+        <span className={dates.bold}>
           {'FREE Shipping'}
         </span>
         {' at checkout. '}
@@ -67,10 +67,10 @@ const Dates = () => {
       </div>
       <div className={dates.stock}>
         <span className={dates.available}>
-          {' In Stock. '} 
+          {' In Stock. '}
           <br />
         </span>
-        <span className={dates.location}> 
+        <span className={dates.location}>
           {' Ships from and sold by Amazon.com. '}
         </span>
       </div>
