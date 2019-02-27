@@ -2,7 +2,7 @@
 const express = require('express');
 const cors = require('cors');
 const path = require('path');
-
+// 
 const app = express();
 const { getProduct } = require('../database/index.js');
 const { addToCart } = require('../database/index.js');
@@ -48,7 +48,7 @@ app.get('/api/product/:id', (req, res) => {
 // });
 
 app.get('*', (req, res) => {
-  res.sendFile(`/client/dist/index.html`, {'root': `${__dirname}/../`});
+  res.sendFile(`/client/dist/index.html`, { 'root': `${__dirname}/../` });
 });
 
 const PORT = 3002;
