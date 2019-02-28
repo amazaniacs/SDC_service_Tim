@@ -37,6 +37,14 @@ npm install
 POST /api/buynow/:id 
 ``` 
 
+### Example
+```sh
+This will create data and post it to database. In this case, data will be insert to DB when user make any purchases.
+
+app.post("/api/buynow/:id ", (req, res) => 
+  // post data 
+)
+```
 
 ### READ(GET) 
 ```sh
@@ -59,6 +67,8 @@ This is what the data looks like when a "GET" request sent from client to server
   cartQuantity: 0
 }
 ```
+
+### 
 
 
 
