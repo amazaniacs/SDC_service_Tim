@@ -32,7 +32,7 @@ npm install
 
 # CRUD
 
-### -CREATE(POST)
+### -CREATE (POST)
 ```sh 
 POST /api/buynow/:id 
 ``` 
@@ -48,7 +48,7 @@ app.post("/api/buynow/:id ", (req, res) => {
 })
 ```
 
-### -READ(GET) 
+### -READ (GET) 
 ```sh
 GET /api/product/:id  
 ```
@@ -74,7 +74,7 @@ This is what the data looks like when a "GET" request sent from client to server
 }
 ```
 
-### -UPDATE(PUT) 
+### -UPDATE (PUT) 
 
 ```sh
 PUT /api/update/:id 
@@ -90,6 +90,25 @@ app.put("/api/update/:id", (req,res) => {
 
 })
 ``` 
+
+### -DELETE (DELETE) 
+
+```sh 
+DELETE /api/delete/:id
+```
+
+### Example
+```sh 
+This is a DELETE request to a path with a callback function. 
+
+app.delete('/api/delete/:id', function (req, res) {
+  res.send('DELETE request to homepage');
+});
+```
+
+```sh
+app.delete(path, callback [, callback ...])
+```
 
 
 
