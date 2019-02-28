@@ -32,7 +32,7 @@ npm install
 
 # CRUD
 
-### CREATE(POST)
+### -CREATE(POST)
 ```sh 
 POST /api/buynow/:id 
 ``` 
@@ -48,7 +48,7 @@ app.post("/api/buynow/:id ", (req, res) => {
 })
 ```
 
-### READ(GET) 
+### -READ(GET) 
 ```sh
 GET /api/product/:id  
 ```
