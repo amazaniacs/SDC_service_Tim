@@ -30,7 +30,7 @@ npm install -g nodemon
 npm install
 ```
 
-##CRUD - CREATE 
+## CRUD - CREATE 
 ```sh 
 POST /api/buynow/:id 
 ``` 
@@ -47,7 +47,7 @@ Respond
 This is what the data looks like when a "GET" request sent from client to server. 
 ``` 
 
-#Example
+# Example
 ```sh 
 {
   price: 25, 
