@@ -35,7 +35,17 @@ npm install
 GET /api/product/:id  
 ```
 
+```sh
+Respond  
 
+{
+  price: 25, 
+  quantity: 10,
+  isPrime: false,
+  inCart: true,
+  cartQuantity: 0
+}
+```
 
 
 
