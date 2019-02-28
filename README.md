@@ -54,7 +54,6 @@ GET /api/product/:id
 ```
 
 ```sh
-Respond  
 
 This is what the data looks like when a "GET" request sent from client to server. 
 
@@ -76,7 +75,15 @@ This is what the data looks like when a "GET" request sent from client to server
 }
 ```
 
-### 
+### -UPDATE(PUT) 
+
+```sh
+PUT /api/update/:id 
+```
+
+```sh 
+
+``` 
 
 
 
