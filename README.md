@@ -80,6 +80,7 @@ This is what the data looks like when a "GET" request sent from client to server
 PUT /api/update/:id 
 ```
 
+### Example
 ```sh 
 This is the way to update or change something to database. 
 
