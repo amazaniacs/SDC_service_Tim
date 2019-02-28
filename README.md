@@ -16,7 +16,7 @@
 1. [Usage](#Usage)
 2. [CRUD](#CRUD)
 
-## Usage 
+# Usage 
 
 To get started: 
 
@@ -30,13 +30,15 @@ npm install -g nodemon
 npm install
 ```
 
-## CRUD - CREATE(POST)
+# CRUD
+
+### CREATE(POST)
 ```sh 
 POST /api/buynow/:id 
 ``` 
 
 
-## CRUD - READ(GET) 
+### READ(GET) 
 ```sh
 GET /api/product/:id  
 ```
