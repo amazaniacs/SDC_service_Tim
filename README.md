@@ -41,9 +41,11 @@ POST /api/buynow/:id
 ```sh
 This will create data and post it to database. In this case, data will be insert to DB when user make any purchases.
 
-app.post("/api/buynow/:id ", (req, res) => 
-  // post data 
-)
+app.post("/api/buynow/:id ", (req, res) => {
+  
+  // post data ... 
+
+})
 ```
 
 ### READ(GET) 
@@ -57,7 +59,9 @@ Respond
 This is what the data looks like when a "GET" request sent from client to server. 
 
  app.get("/api/product/:id", (req, res) => {
-  // get data 
+
+  // get data ... 
+
  })
 ``` 
 
