@@ -30,6 +30,7 @@ npm install -g nodemon
 npm install
 ```
 
+## CRUD - READ 
 ```sh
 GET /api/product/:id  
 ```
