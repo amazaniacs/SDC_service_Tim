@@ -39,16 +39,16 @@ POST /api/buynow/:id
 
 ### Example
 ```sh
-This will create data and post it to database. In this case, data will be insert to DB when user make any purchases.
+This will create data and post it to database. In this case, data will be insert to DB when user make any purchases. Those can be items that users want to leave on the cart so they can come back to make purchase next time. 
 
 app.post("/api/buynow/:id ", (req, res) => {
-  
-  // post data ... 
+
+  // post(req.body.name, req.body.date, req.body.item, req.body.price, req.body.quantity)
 
 })
 ```
 
-### -READ (GET) 
+### - READ (GET) 
 ```sh
 GET /api/product/:id  
 ```
@@ -74,24 +74,24 @@ This is what the data looks like when a "GET" request sent from client to server
 }
 ```
 
-### -UPDATE (PUT) 
+### - UPDATE (PUT) 
 
 ```sh
-PUT /api/update/:id 
+PUT /api/update/:category/:amount
 ```
 
 ### Example
 ```sh 
-This is the way to update or change something to database. 
+This is the way to update or change something to database. Specially, it can be something that users want to change the quantity they purchase in the cart in future. 
 
-app.put("/api/update/:id", (req,res) => {
+app.put("/api/update/:category/:amount", (req,res) => {
 
   res.send('PUT request to homepage');
 
 })
 ``` 
 
-### -DELETE (DELETE) 
+### - DELETE (DELETE) 
 
 ```sh 
 DELETE /api/delete/:id
