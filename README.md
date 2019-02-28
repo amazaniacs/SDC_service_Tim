@@ -30,13 +30,13 @@ npm install -g nodemon
 npm install
 ```
 
-## CRUD - CREATE(post)
+## CRUD - CREATE(POST)
 ```sh 
 POST /api/buynow/:id 
 ``` 
 
 
-## CRUD - READ(get) 
+## CRUD - READ(GET) 
 ```sh
 GET /api/product/:id  
 ```
