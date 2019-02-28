@@ -38,6 +38,8 @@ GET /api/product/:id
 ```sh
 Respond  
 
+This is what the data looks like when a "GET" request sent from client to server. 
+
 {
   price: 25, 
   quantity: 10,
