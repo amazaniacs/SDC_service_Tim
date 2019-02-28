@@ -55,6 +55,10 @@ GET /api/product/:id
 Respond  
 
 This is what the data looks like when a "GET" request sent from client to server. 
+
+ app.get("/api/product/:id", (req, res) => 
+  // get data 
+)
 ``` 
 
 ### Example
