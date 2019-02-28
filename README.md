@@ -81,7 +81,13 @@ PUT /api/update/:id
 ```
 
 ```sh 
+This is the way to update or change something to database. 
 
+app.put("/api/update/:id", (req,res) => {
+
+  res.send('PUT request to homepage');
+
+})
 ``` 
 
 
