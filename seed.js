@@ -11,7 +11,7 @@ let writeOneMillionTimes = (writer, encoding, callback) => {
       let index = 10000000 - 1 - i;
       let obj = {
         id: index + 1,
-        name: `Amazon_Product${index + 1}`,
+        name: `Amazon Product${index + 1}`,
         price: Number(Math.floor((Math.random() * 100).toFixed(2))),
         quantity: Number(Math.floor((Math.random() * 100).toFixed(0))),
         isPrime: false,
