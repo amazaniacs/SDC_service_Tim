@@ -2,15 +2,15 @@ var fs = require('fs');
 var wstream = fs.createWriteStream('myData.csv');
 
 // feedToArr function 
-let feedToArr = (data, number = 1000000) => {
+let feedToArr = (data, number = 10000000) => {
 
   for (let j = 0; j < number; j++) {
 
     let obj = {
       id: j + 1,
-      name: `Amazon Product${j + 1}`,
-      price: Number((Math.random() * 100).toFixed(2)),
-      quantity: Number((Math.random() * 100).toFixed(0)),
+      name: `Amazon_Product${j + 1}`,
+      price: Number(Math.floor((Math.random() * 100).toFixed(2))),
+      quantity: Number(Math.floor((Math.random() * 100).toFixed(0))),
       isPrime: false,
       inCart: false,
       cartQuantity: 0
@@ -20,14 +20,14 @@ let feedToArr = (data, number = 1000000) => {
 }
 
 let writeOneMillionTimes = (writer, data, encoding, callback) => {
-  let i = 1000000;
+  let i = 10000000;
   write();
   function write() {
     let ok = true;
     do {
       i--;
-      let index = 1000000 - 1 - i;
-      let newData = data[index].id + "," + data[index].name + "," + data[index].price + "," + data[index].quantity + ", " + data[index].isPrime + ", " + data[index].inCart + ", " + data[index].cartQuantity + "\n";
+      let index = 10000000 - 1 - i;
+      let newData = data[index].id + "," + data[index].name + "," + data[index].price + "," + data[index].quantity + "," + data[index].isPrime + "," + data[index].inCart + "," + data[index].cartQuantity + "\n";
       if (i === 0) {
         // last time!
         writer.write(newData, encoding, callback);
