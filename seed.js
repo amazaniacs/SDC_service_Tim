@@ -33,7 +33,7 @@ let writeOneMillionTimes = (writer, encoding, callback) => {
 }
 
 let startToWrite = () => {
-  writeOneMillionTimes(wstream, "UTF-8", (err, data) => {
+  writeOneMillionTimes(wstream, "UTF-8", (err) => {
     if (err) {
       console.log(err);
       return;
