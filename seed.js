@@ -1,7 +1,7 @@
 var fs = require('fs');
 var wstream = fs.createWriteStream('data.csv');
 
-let writeOneMillionTimes = (writer, encoding, callback) => {
+let writeNthTime = (writer, encoding, callback) => {
   let i = 10000000;
   write();
   function write() {
@@ -33,7 +33,7 @@ let writeOneMillionTimes = (writer, encoding, callback) => {
 }
 
 let startToWrite = () => {
-  writeOneMillionTimes(wstream, "UTF-8", (err) => {
+  writeNthTime(wstream, "UTF-8", (err) => {
     if (err) {
       console.log(err);
       return;
