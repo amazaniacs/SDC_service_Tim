@@ -97,7 +97,7 @@ class AddToListModal extends React.Component {
             <div className={addToModal.listNamesSection}>
               <div className={addToModal.listName}>
                 <span className={addToModal.listNameText}>List name</span>
-                <input type="text" value="Shopping List" className={addToModal.listNameInput} />
+                <input type="text" className={addToModal.listNameInput} />
                 <input type="checkbox" />
                 Keep purchased items on your list
               </div>
