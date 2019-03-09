@@ -17,7 +17,7 @@ class Buttons extends React.Component {
     axios.get(`/api/product/${productID}`)
       .then((res) => {
         for (let i = 1; i < res.data[0].quantity + 1; i += 1) {
-          quantity.push(<option>{i}</option>);
+          quantity.push(<option key={i}>{i}</option>);
         }
       })
       .catch((err) => {
@@ -35,7 +35,7 @@ class Buttons extends React.Component {
           {' '}
         </span>
         <select id={button.quantity}>
-          { quantity }
+          {quantity}
         </select>
         <div className={button.cart}>
           <button className={button.addToCart} type="button">
