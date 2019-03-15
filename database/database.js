@@ -1,17 +1,22 @@
 const mongo_client = require('mongodb').MongoClient;
-let db = "";
-let length = 100000000;
+var db = "";
+var length = 100000000; 
+var obj = {}; 
 
-mongo_client.connect("mongodb://localhost:27017/", (err, mongoClient) => {
-  if (err) {
-    console.log(err);
+mongo_client.connect("mongodb://Tim:753@18.223.21.48/sdc_db", (err, mongoClient) => {
+  
+    if (err) {
+     console.log("Failed");
+     console.log(err);
     return;
   }
-  db = mongoClient.db("newTest");
+  db = mongoClient.db("sdc_db");
 })
 
 const getItem = (id, callback) => {
-  db.collection("amazonCart").find({ id: id }).toArray((err, data) => {
+  
+
+  db.collection("test").find({ id: id }).toArray((err, data) => {
     if (err) {
       console.log(err);
       return;
@@ -22,9 +27,9 @@ const getItem = (id, callback) => {
 
 const saveItem = () => {
   length++;
-  let price = Number(Math.floor((Math.random() * 100).toFixed(2)));
-  let quantity = Number(Math.floor((Math.random() * 100).toFixed(0)));
-  let obj = {
+  var price = Number(Math.floor((Math.random() * 100).toFixed(2)));
+  var quantity = Number(Math.floor((Math.random() * 100).toFixed(0)));
+  var obj = {
     "id": length,
     "name": `Amazon Product ${length}`,
     "price": price,
@@ -33,8 +38,7 @@ const saveItem = () => {
     "inCart": false,
     "cartQuantity": 0
   };
-  db.collection("amazonCart").save(obj);
+  db.collection("test").save(obj);
 }
-
 module.exports.getItem = getItem;
 module.exports.saveItem = saveItem;
